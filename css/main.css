@@ -25,16 +25,29 @@
     position: absolute;
     color: #333;
     font-size: 30px;
-    -webkit-: rotation 5s infinite linear;
+    /* -webkit-: rotation 5s infinite linear; */
+    animation: rotate 5s infinite linear;
 }
-@keyframes rotation {
+/* @keyframes rotation {
     from {
         transform: rotate(0deg);
     }
     to {
         transform: rotate(360deg);
     }
-}
+} */
+@keyframes rotate {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
 span.space {padding-right: 10px;}
 
 /* SECTION 1 */
