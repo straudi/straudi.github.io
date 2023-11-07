@@ -1,0 +1,159 @@
+/* guide */
+#guide {width: 100%; height: 100vh;}
+#guide:after {content: ""; display: block; clear: both;}
+#guide .frame{max-width: 1220px; height: calc(100% - 60px); margin: 0 auto; position: relative; padding: 0 20px;}
+#guide .frame .guide_con {width: 100%; height: 100%; display: flex; align-items: center; justify-content: space-around;}
+#guide .frame .guide_con .img { float: left; font-size: 0; width: 50%; padding: 15px;}   
+#guide .frame .guide_con .img .landscape {background-size: cover; background-repeat: no-repeat; background-position: 50% 50%; display: inline-block;}
+#guide .frame .guide_con .img .landscape:nth-child(1) {background-image: url(../img/stephen-leonardi--UWtb-3v6jQ-unsplash.jpg); margin-right: 10px;}
+#guide .frame .guide_con .img .landscape:nth-child(2) {background-image: url(../img/keith-zhu-qaNcz43MeY8-unsplash.jpg);  transform: translate(0, 55%);}
+#guide .frame .guide_con .txt {width: 50%; float: left;} 
+#guide .frame .guide_con .txt h4 {font-size:30px; color:#222222; padding-bottom: 15px;}
+#guide .frame .guide_con .txt p {font-size:20px; color:#707070; width: 100%;}
+#guide .frame .guide_con .txt a {float: right; margin-top: 25px; width: 100px; height: 40px;}
+
+/* platform */
+#platform {width: 100%; height: 100vh;}
+#platform .frame {max-width: 1220px; height: calc(100% - 60px); margin: 0 auto; padding: 0 20px;}
+#platform .frame .phone {width: 50%; height: 85%; float: left;}
+#platform .frame .phone .phone_frame {position: relative; height: 740px; width: 390px; border:1px solid #ccc; overflow: hidden;
+margin: 0 auto; padding: 60px 20px; border-radius: 55px;box-shadow: 2px 2px 2px rgba(0,0,0,0.25); background: #fff; }
+#platform .frame  .phone .phone_frame .hole_01 {position: absolute; width:20px; height: 20px; border:1px solid #aaa; border-radius: 50px; 
+top:3%; left: 35%;}
+#platform .frame  .phone .phone_frame .hole_02 {position: absolute; width:100px; height: 20px; border:1px solid #aaa; border-radius: 50px;
+    top:3%; left: 45%;}
+#platform .frame  .phone .phone_frame .hole_03 {position: absolute; width:40px; height: 40px; border:1px solid #aaa; border-radius: 50px;
+    bottom:1%; left: 45%; margin: 0 auto;}
+#platform .frame  .phone .phone_frame .inside {overflow-y: auto; width: 352px; height: 628px; border: 1px solid #aaa; cursor: pointer;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+#platform .frame  .phone .phone_frame .inside::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+#platform .frame  .phone .phone_frame .inside img {width: 100%; }
+
+#platform .frame  .phone .phone_frame .inside img:nth-child(1){display: none;}
+#platform .frame  .phone .phone_frame .inside img:nth-child(1).active{display: block; position: sticky; top:0; left: 0;}
+
+#platform .frame .wrap {width: 50%; height: 85%; float: left; display: table;}
+#platform .frame .wrap .txt {width: 60%; display: table-cell; vertical-align: middle;}
+#platform .frame .wrap .txt h4 {font-size:30px; color:#222222; padding-bottom: 15px;}
+#platform .frame .wrap .txt p {font-size:20px; color:#707070; width: 100%;}
+
+/* apply */
+#apply {width: 100%; height: 100vh;}
+#apply .banner {width: 100%; height: 50%;}
+#apply .banner .img {width: 100%; height: 80%; background: url(../img/img-bg-2.jpg) no-repeat 50% 50%; background-size: cover; background-attachment: fixed;} 
+#apply .frame {max-width: 1220px; height: calc(100% - 60px); margin: 0 auto;  padding: 0 20px;}
+#apply .frame .txt {width: 60%; height: 50%; margin: 0 auto;}
+#apply .frame .txt h4 {font-size:30px; color:#222222; padding-bottom: 15px;}
+#apply .frame .txt p {font-size:20px; color:#707070; }
+#apply .frame .txt a {float: right; margin-top: 25px; width: 120px; height: 40px;}
+
+/* news */
+#news {width: 100%; height: 100vh;}
+#news .frame {max-width: 800px; height: calc(100% - 60px); margin: 0 auto; text-align: center;  padding: 0 20px;}
+#news h4 {font-size:30px; color:#222222; padding-bottom: 15px;}
+#news .article {display: inline-block; text-align: left;}
+#news .article ul {}
+#news .article ul li {padding: 20px 0;}
+#news .article ul li p{color:#15d294; font-size: 16px;}
+#news .article ul li a{display: block; font-size: 20px; color:#707070;}
+#news .article ul li span{font-size: 14px; color:#aaa;}
+
+#news .pager {text-align: center; padding-top: 50px;}
+#news .pager>a{font-size: 16px; color:#222222;}
+#news .pager ol {display: inline-block; font-size: 0;}
+#news .pager ol li {display: inline-block;  padding:0 10px;}
+#news .pager ol li a{font-size: 16px; color:#222222;}
+
+
+/* contact */
+#contact {width: 100%; height: 100vh; text-align: center;}
+#contact .frame {max-width: 800px; height: calc(100% - 60px); margin: 0 auto; padding: 0 20px;}
+#contact .frame .img {height: 40%; background: url(../img/334188411.png) no-repeat 50% 50%; background-size: contain; position: relative; 
+    overflow: hidden; opacity: 0; transition: opacity 1s;}
+#contact .frame .img.active {opacity: 1;}
+#contact .frame .img .cloud { position: absolute; top:0; left: 0;}
+#contact .frame .img .cloud.active{top:-300px;}
+#contact .frame .img .cloud:nth-child(1) {width: 100%; height: 100%; background: url(../img/cloud.png) 50% 50% no-repeat; 
+    background-size: 100% auto;transition: top 3.5s;}
+#contact .frame .img .cloud:nth-child(2) {width: 100%; height: 100%; background: url(../img/cloud.png) 50% 60% no-repeat;
+    background-size: 100% auto;transition: top 4.5s;}
+#contact .frame .img .cloud:nth-child(3) {width: 100%; height: 100%; background: url(../img/cloud.png) 50% 70% no-repeat; 
+    background-size: 100% auto;transition: top 5.5s; }
+
+
+#contact .frame .txt {display: inline-block; text-align: left; width: 76%; height: 60%;} 
+#contact .frame .txt h4 {font-size:30px; color:#222222; padding-bottom: 30px;}
+#contact .frame .txt .box {width: 100%; height: calc(16.66% - 20px); padding: 10px 0;}
+#contact .frame .txt .box>div {float: left;}
+#contact .frame .txt .box .title {width: 20%; color: #333333; font-size: 18px; font-weight: bold;}
+#contact .frame .txt .box .info {width: calc(80% - 20px); padding-left: 20px; color: #15d294; font-size: 18px; font-weight: bold;}
+
+@media(max-width:1199px){/* 1200px 미만 992 이상 */
+
+}
+
+@media(max-width:991px){/* 992px 미만 768px 이상 */
+#guide {height: auto; padding: 100px 0 40px;}
+#guide .frame .guide_con {display: block;}
+#guide .frame .guide_con .img {float: none; width: 100%; height: auto; text-align: center; padding-bottom:15vw;}
+#guide .frame .guide_con .txt {float: none; height: 100%; margin: 0 auto;}
+#guide .frame .guide_con .txt h4 {font-size: 18px;}
+#guide .frame .guide_con .txt p{font-size:14px;}
+
+#platform {height: auto;}
+#platform .frame .phone {float: none; height: auto; margin:  0 auto; width: 100%;}
+#platform .frame .phone .phone_frame {height: 640px; width: 345px;}
+#platform .frame .phone .phone_frame .inside {width: 305px; height: 524px;}
+#platform .frame .wrap {float: none; height: auto; margin: 0 auto; padding-top:40px; padding-bottom: 40px;}
+#platform .frame .wrap .txt h4 {font-size: 18px;}
+#platform .frame .wrap .txt p {font-size:14px; color:#707070; width: 100%;}
+
+#apply {height: auto; padding-bottom: 40px;}
+#apply .banner {padding-bottom: 40px;}
+#apply .banner .img {height: 200px;}
+#apply .frame .txt {}
+#apply .frame .txt h4 {font-size: 18px;}
+#apply .frame .txt p {font-size:14px;}
+
+#news {height: auto; padding-bottom: 40px;}
+#news h4 {font-size:18px;}
+#news .article ul li p {font-size:16px;}
+#news .article ul li a {font-size:18px;}
+#news .article ul li span {font-size:14px;}
+#news .article ul li a{font-size: 16px;}
+
+#contact .frame .txt h4 {font-size: 18px;}
+#contact .frame .txt .box .title {font-size: 16px;}
+#contact .frame .txt .box .info {font-size: 16px;}
+}    
+
+
+@media(max-width:767px){/* 768px 미만*/
+#guide {padding-bottom: 40px;}
+#guide .frame {padding: 0 15px;}
+#guide .frame .guide_con .img {padding-bottom:24vw;}
+#guide .frame .guide_con .img .landscape {width: 50%;}
+#guide .frame .guide_con .txt {height: 100%; width:100%;}
+
+#platform .frame {width: 100%; padding: 0;}
+#platform .frame .phone .phone_frame {width: 300px; height: 540px; }
+#platform .frame .phone .phone_frame .inside {width: 260px; height: 420px;}
+#platform .frame .wrap {width: 100%; padding: 40px 15px 20px;}
+
+#apply .frame {padding: 0 15px; width: 100%;}
+#apply .frame .txt {width: 100%;}
+
+#contact {word-break: keep-all;}
+
+#contact .frame .txt .box .title {font-weight: normal;}
+#contact .frame .txt .box .info {font-weight: normal;}
+}
+
+@media(max-width:353px){/* 768px 미만*/
+
+}
+
