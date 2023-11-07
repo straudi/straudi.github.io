@@ -26,7 +26,7 @@
     color: #333;
     font-size: 30px;
     /* -webkit-: rotation 5s infinite linear; */
-    animation: rotate 5s infinite linear;
+    animation: rotate 5s infinite cubic-bezier(0.550, 0.085, 0.680, 0.530);
 }
 /* @keyframes rotation {
     from {
